@@ -1,0 +1,53 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                collapsible: true,
+                heightStyle: "content"
+            });
+            
+        } );
+        </script>
+
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+            div#ui-id-2{
+                height: 400px;
+            }
+
+       </style>
+    </head>
+    <body>
+       <div >
+
+       <div id="accordion" style="height: 100%;">
+        <h3>Entraine toi !!</h3>
+        <div>
+            
+            <img src="{% static 'college/fonctions/statistique_probabilite/representation.png' %}" height="400">
+            <img src="{% static 'college/fonctions/statistique_probabilite/representation1.png' %}" height="400">
+
+        </div>
+        <h3>Diagrammes</h3>
+        <div>
+         
+        </div>
+        
+        
+        
+      </div>       
+
+    </div>
+    </body>
+</html>

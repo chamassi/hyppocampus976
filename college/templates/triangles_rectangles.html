@@ -1,0 +1,80 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+              $( "#tabs" ).tabs();
+            } );
+        </script>
+
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+
+       </style>
+    </head>
+    <body>
+       <h1 style="text-align: center;color: navy;">
+                <a href="index" title="Aller sur la page d'acceuil !">      <img src="{% static 'college/Hippocampus.png' %}" height="150"> 
+                </a>
+                -> <span style="color: red;">Triangles rectangles</span>  
+         <a href="{% static 'college/Cours-Triangles-rectangles.pdf' %}" title="CE QUE JE DOIS SAVOIR ! " target="_blank"> 
+                 <img src="{% static 'college/cours.png' %}" height="150"> 
+            </a></h1>
+      
+       
+         <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Utiliser les racines carr&eacute;es</a></li>
+              <li><a href="#tabs-2">Le th&eacute;or&egrave;me de Pyhthagore</a></li>
+              <li><a href="#tabs-3">Triangles rectangles ou pas ?</a></li>
+              <li><a href="#tabs-4">Relation trigonom&eacute;trique</a></li>
+              <li><a href="#tabs-5">Longueurs avec la trigonom&eacute;trique</a></li>
+              <li><a href="#tabs-6">Mesure d&prime;un angle</a></li>
+            </ul>
+            <div id="tabs-1">
+                    <h3>Utiliser les racines carr&eacute;es</h3>
+                    <iframe src="situation_proportionnalite" width="100%" height="750"></iframe>
+
+               
+
+            </div>
+            <div id="tabs-2">
+                    <h3>Calculer avec le th&eacute;or&egrave;me de Pyhthagore</h3>
+                    <iframe src="probleme_proportionnalite" width="100%" height="750"></iframe>
+            </div>
+            <div id="tabs-3">
+                    <h3>D&eacute;montrer qu&prime;un triangles rectangles ou pas ?</h3>
+                    <iframe src="pourcentage" width="100%" height="750"></iframe>
+            </div>
+            <div id="tabs-4">
+                    <h3>&Eacute;crire une relation trigonom&eacute;trique</h3>
+                    <iframe src="echelle" width="100%" height="750"></iframe>
+            </div>
+            <div id="tabs-5">
+                <h3>Calculer des longueurs avec la trigonom&eacute;trique</h3>
+                <iframe src="echelle" width="100%" height="750"></iframe>
+        </div>
+        <div id="tabs-6">
+            <h3>Calculer la mesure d&prime;un angle</h3>
+            <iframe src="echelle" width="100%" height="750"></iframe>
+    </div>
+          </div>
+ 
+          
+      
+           
+
+
+                
+
+    </body>
+</html>

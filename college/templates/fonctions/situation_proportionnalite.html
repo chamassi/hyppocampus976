@@ -1,0 +1,84 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                collapsible: true,
+                heightStyle: "content"
+            });
+        } );
+        </script>
+
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+
+       </style>
+    </head>
+    <body>
+            
+        <div id="accordion" style="height: 100%;">
+            <h3>Entraine toi !!</h3>
+            <div>
+                    <img src="{% static 'college/fonctions/proportionnalite/situation.png' %}" height="400">
+            </div>
+            
+            <h3>Probl&egrave;mes</h3>
+            <div>
+                    
+                    <table style="width: 100%;">
+                            <tr>
+                                <td style="background-color: wheat;">
+                                   <h3> Tableau de proportionnalit&eacute;</h3>
+                                   <form action="tableauProportionnalite">
+                                       <h4>Taille du tableau 
+                                           <input title="Saisissez la taille du tableau pour le créer !" name="taille_tableau" type="number" required> 
+                                           <select>
+                                                <option >Nombres Entiers</option>
+                                                <option>Nombres d&eacute;cimaux</option>
+                                           </select>
+                                        <input type="submit" value="TABLEAU"> </h4>
+                                       
+                                   </form>
+                                </td>
+            
+                            </tr>
+                            <tr>
+                                <td style="background-color: skyblue; ">
+                                   <h3> Formule de proportionnalit&eacute; <span style="color: red;">F(X)=coefficient*X (lin&eacute;aire)</span> </h3>
+                                   <form>
+                                       <h4>Coefficient de proportionnalit&eacute;  <input type="number" required> 
+                                        POUR X entre <input type="number" required> et
+                                        <input type="number"> </h4>
+                                   </form>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td style="background-color:rgb(227, 252, 212)">
+                                   <h3> Graphique de proportionnalit&eacute;</h3>
+                                   <iframe src="displayProportionnalite" width="100%" height="500"></iframe>
+                                </td>
+                                
+                            </tr>
+                        </table>
+
+                        
+            </div>
+            
+            
+            
+          </div>
+        
+        
+    </body>
+</html>

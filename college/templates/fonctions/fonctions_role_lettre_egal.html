@@ -1,0 +1,87 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                collapsible: true,
+                heightStyle: "content"
+            });
+            
+        } );
+        </script>
+
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+
+       </style>
+
+        <style>
+        .blinking{
+        animation:blinkingText 1.2s infinite;
+        }
+        @keyframes blinkingText{
+            0%{     color: #000;    }
+            49%{    color: #000; }
+            60%{    color: transparent; }
+            99%{    color:transparent;  }
+            100%{   color: #000;    }
+        }
+    
+    
+          </style>
+    </head>
+    <body><h2 class="blinking" style="text-align: center;">R&ocirc;le de la lettre et du signe &eacute;gal 
+             
+            </h2>
+        <div id="accordion" style="height: 100%;">
+            <h3>Ecrire en fonction de x !! </h3>
+            <div>
+                
+                <img src="{% static 'college/fonctions/role_lettre_signe/ecrire-en-fonction2.png' %}" height="400">
+                <img src="{% static 'college/fonctions/role_lettre_signe/ecrire-en-fonction0.png' %}" height="400">
+                <img src="{% static 'college/fonctions/role_lettre_signe/ecrire-en-fonction.png' %}" height="400">
+                
+    
+            </div>
+            <h3>R&eacute;duire une somme, simplifer un pproduit</h3>
+            <div>
+                    <img src="{% static 'college/fonctions/role_lettre_signe/resuire-somme.png' %}" height="400">
+                    <img src="{% static 'college/fonctions/role_lettre_signe/simplifier-somme.png' %}" height="400">
+                    
+            </div>
+            <h3>Supprimer des parenth&egrave;ses</h3>
+            <div>
+                    <img src="{% static 'college/fonctions/role_lettre_signe/supprimer-somme.png' %}" height="400">
+                   
+            </div>
+            <h3>Tester une &eacute;galit&eacute;</h3>
+            <div>
+                    <img src="{% static 'college/fonctions/role_lettre_signe/tests-in-egalite1.png' %}" height="400">
+                    <img src="{% static 'college/fonctions/role_lettre_signe/tests-in-egalite.png' %}" height="400">
+                    
+            </div>
+            <h3>Valeur d&prime;une expression</h3>
+            <div>
+                    <img src="{% static 'college/fonctions/role_lettre_signe/valeur-expression0.png' %}" height="400">
+                    <img src="{% static 'college/fonctions/role_lettre_signe/valeur-expression1.png' %}" height="400">
+                    <img src="{% static 'college/fonctions/role_lettre_signe/valeur-expression2.png' %}" height="400">
+            </div>
+           
+            
+            
+            
+          </div>       
+                
+
+    </body>
+</html>

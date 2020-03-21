@@ -1,0 +1,75 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+
+       </style>
+    </head>
+    <body>
+       <h1 style="text-align: center;color: navy;">
+            <img src="{% static 'college/Hippocampus.png' %}" height="150">  
+        HYPPOCAMPUS COLL&Eacute;GE - <span style="color: red;">  Nombres entiers </span> --- 
+        <a href="index"> RETOUR PAGE ACCUEIL</a> </h1>
+       
+       <div>
+           <table style="width: 100%;">
+               <tr>
+                   <td style="width: 20%;">
+                    <a href="{% static 'college/Cours-Nombre-rationnels.pdf' %}" target="_blank">  <img src="{% static 'college/cours.png' %}" height="300"> </a>
+                 </td>
+                 <td style="width: 80%;">
+                <table style="width: 100%;background-color:turquoise;">
+                    <thead style="background-color:skyblue;">
+                        <th>
+                            <h2> Utiliser la division euclidienne</h2> 
+                        </th>
+
+                        <th>
+                                <h2>   Utiliser les nombres premiers </h2>
+                            </th>
+                    </thead>
+                    <tr>
+                        <td>
+                           <h3> Diviseur </h3> 
+                            <iframe src="diviseur" width="100%" height="150"></iframe>
+                        </td>
+                        <td>
+                           <h3> Nombres premiers </h3>
+                           <iframe src="nombres_premiers" width="100%" height="150"></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                    <h3>  Multiple </h3>
+                                <iframe src="multiple" width="100%" height="150"></iframe>
+                            </td>
+                            <td>
+                                    <h3> Facteurs premiers </h3> 
+                                    <iframe src="facteurs_premiers" width="100%" height="150"></iframe>
+                                 </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <h3>  Division Euclidienne</h3>
+                                        <iframe src="division_euclidienne" width="100%" height="150"></iframe>
+                                </td>
+                                <td>
+                                        <h3> Fractions irr&eacute;ductibles </h3>
+                                        <iframe src="fraction_irreductible" width="100%" height="150"></iframe>
+                                     </td>
+                            </tr>
+                </table>
+            </td>
+            </tr>
+
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&EACUTE;GE </title>
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+
+       </style>
+    </head>
+    <body>
+       <h1 style="text-align: center;color: navy;">
+            <img src="{% static 'college/Hippocampus.png' %}" height="150">  
+        HYPPOCAMPUS COLL&Eacute;GE -<span style="color: red;">  Nombres relatifs </span> -- <a href="index"> RETOUR PAGE ACCUEIL</a> </h1>
+       
+      
+
+       <table style="width: 100%;">
+           <tr>
+               <td style="width: 10%;">
+                    <a href="{% static 'college/Cours-Nombre-relatifs.pdf' %}" target="_blank">  <img src="{% static 'college/cours.png' %}" height="300"> </a>
+               </td>
+               <td style="width: 80%;">
+                    <h1>OP&Eacute;RATIONS</h1>
+                    <table style="width: 100%;font-size: 20px;background-color: turquoise;">
+                    
+                            <tr>
+                                <td>
+                                   <h3> Addition </h3> 
+                                   <iframe src="addition_relatifs" height="110" width="100%"></iframe>
+                                </td>
+                                <td>
+                                        <h3>   Soustraction</h3>
+                                        <iframe src="soustraction_relatifs" height="110" width="100%"></iframe>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                            <h3>   Multiplication</h3>
+                                            <iframe src="multiplication_relatifs" height="110" width="100%"></iframe>
+                                    </td>
+                                    <td>
+                                            <h3>  Division</h3>
+                                            <iframe src="division_relatifs" height="110" width="100%"></iframe>
+                                    </td>
+                                </tr>
+                        </table>
+               </td>
+           </tr>
+       </table>       
+       <h1>COMPARAISON ET ORDRE</h1>
+       <table style="width: 100%;">
+           <tbody>
+               <tr>
+                   <td>
+                       <h3> Est plus petit que <span style="color: red;font-size: 30px;"> < </span></h3> 
+                    
+                    </td>
+                   <td><h3> Est &eacute;gal &agrave; <span style="color: red;font-size: 30px;"> = </span></h3> </td>
+                   <td>
+                        <h3>  Est plus grand que <span style="color: red;font-size: 30px;"> > </span> </h3> 
+                
+                    </td>
+               </tr>
+           </tbody>
+       </table>
+
+    </body>
+</html>

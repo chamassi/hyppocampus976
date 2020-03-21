@@ -1,0 +1,61 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+              $( "#tabs" ).tabs();
+            } );
+            
+        </script>
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+
+       </style>
+    </head>
+    <body>
+      <h1 style="text-align: center;color: navy;">
+                <a href="index">    <img src="{% static 'college/Hippocampus.png' %}" height="150"> </a>  
+        -> <span style="color: red;">  Calcul litt&eacute;ral </span> 
+        <a href="{% static 'college/Cours-calcul-litteral.pdf' %}" title="CE QUE JE DOIS SAVOIR ! " target="_blank"> 
+                 <img src="{% static 'college/cours.png' %}" height="100"> </a> 
+                 <span style="color: red;">  &Eacute;quation, in&eacute;quation </span> 
+                 <a href="{% static 'college/Cours-in-equations.pdf' %}" title="CE QUE JE DOIS SAVOIR ! " target="_blank"> 
+                          <img src="{% static 'college/cours.png' %}" height="100"> </a> 
+      </h1>
+       
+       
+
+            
+       <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Calcul litt&eacute;ral </a></li>
+          <li><a href="#tabs-2">&Eacute;quations, in&eacute;quations</a></li>
+          
+          
+        </ul>
+        <div id="tabs-1">
+                <h3>Calcul litt&eacute;ral </h3>
+                <iframe src="calcul_litteral" width="100%" height="550"></iframe>
+
+           
+
+        </div>
+        <div id="tabs-2">
+                <h3>&Eacute;quations, in&eacute;quations </h3>
+                <iframe src="inequations" width="100%" height="550"></iframe>
+        </div>
+        
+        
+      </div>
+
+    </body>
+</html>

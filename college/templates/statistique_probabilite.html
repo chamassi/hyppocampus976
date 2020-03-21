@@ -1,0 +1,73 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+              $( "#tabs" ).tabs();
+            } );
+            
+        </script>
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+
+       </style>
+    </head>
+    <body>
+      <h1 style="text-align: center;color: navy;">
+                <a href="index">    <img src="{% static 'college/Hippocampus.png' %}" height="150"> </a>  
+        -> <span style="color: red;">  Statistique et Probabilit&eacute; </span> 
+        <a href="{% static 'college/Cours-statistique-probabilite.pdf' %}" title="CE QUE JE DOIS SAVOIR ! " target="_blank"> 
+                 <img src="{% static 'college/cours.png' %}" height="100"> </a> 
+        
+      </h1>
+       
+       
+
+            
+       <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Effectif & Fr&eacute;quence </a></li>
+          <li><a href="#tabs-2">Repr&eacute;sentation et lecture de donn&eacute;es</a></li>
+          <li><a href="#tabs-3">Moyenne</a></li>
+          <li><a href="#tabs-4">M&eacute;diane & &eacute;tendue </a></li>
+          <li><a href="#tabs-5"> Probabilit&eacute; </a></li>
+          
+        </ul>
+        <div id="tabs-1">
+                <h3>Effectif & Fr&eacute;quence </h3>
+                <iframe src="effectif_frequence" width="100%" height="550"></iframe>
+
+           
+
+        </div>
+        <div id="tabs-2">
+                <h3>Repr&eacute;sentation et lecture de donn&eacute;es </h3>
+                <iframe src="representation_lecture_donnees" width="100%" height="550"></iframe>
+        </div>
+        <div id="tabs-3">
+                <h3>Moyenne </h3>
+                <iframe src="moyenne" width="100%" height="550"></iframe>
+        </div>
+        <div id="tabs-4">
+                <h3>M&eacute;diane & &eacute;tendue  </h3>
+                <iframe src="mediane_etendue" width="100%" height="550"></iframe>
+
+        </div>
+        <div id="tabs-5">
+                <h3>Probabilit&eacute; </h3>
+                <iframe src="probabilite" width="100%" height="550"></iframe>
+        </div>
+        
+      </div>
+
+    </body>
+</html>

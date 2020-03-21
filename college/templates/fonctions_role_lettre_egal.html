@@ -1,0 +1,84 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+              $( "#tabs" ).tabs();
+            } );
+        </script>
+
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+
+       </style>
+
+
+<style>
+    .blinking{
+    animation:blinkingText 1.2s infinite;
+    }
+    @keyframes blinkingText{
+        0%{     color: #000;    }
+        49%{    color: #000; }
+        60%{    color: transparent; }
+        99%{    color:transparent;  }
+        100%{   color: #000;    }
+    }
+
+
+      </style>
+
+
+    </head>
+    <body>
+       <h1 style="text-align: center;color: red;">
+            <a href="index" title="Aller sur la page d'acceuil !"> <img src="{% static 'college/Hippocampus.png' %}" height="150"> </a>
+            -> Fonctions <a href="{% static 'college/Cours-sur-les-fonctions.pdf' %}" title="CE QUE JE DOIS SAVOIR SUR LES FONCTIONS ! " target="_blank"> 
+                <img  src="{% static 'college/cours.png' %}" height="150">
+               
+             </a> , R&ocirc;le de la lettre et du signe &eacute;gal 
+             <a href="{% static 'college/Cours-role-lettre-signe-egale.pdf' %}" title="CE QUE JE DOIS SAVOIR SUR LE RÔLE DE LA LETTRE ET DU SIGNE EGAL ! " target="_blank"> 
+                <img  src="{% static 'college/cours.png' %}" height="150">
+               
+             </a>
+            
+
+             
+    </h1>
+       
+       <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">R&ocirc;le de la lettre et du signe &eacute;gal</a></li>
+              <li><a href="#tabs-2">Fonctions</a></li>
+             
+            </ul>
+            <div id="tabs-1">
+                    
+                    <iframe src="role_lettre_egal" width="100%" height="750"></iframe>
+
+               
+
+            </div>
+            <div id="tabs-2">
+                    <h2 class="blinking" style="text-align: center;">Fonctions
+                            
+
+                    </h2>
+
+                    <iframe src="fonctionsCollege" width="100%" height="750"></iframe>
+            </div>
+        </div>
+
+                
+
+    </body>
+</html>

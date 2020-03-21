@@ -1,0 +1,80 @@
+<html lang="fr">
+    <head>{%  load static %}
+        <meta charset="utf-8">
+        <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+                $( function() {
+                  $( "#tabs" ).tabs();
+                } );
+            </script>
+       <style type="text/css">
+            td#header{
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 25px;
+            }
+
+       </style>
+    </head>
+    <body>
+       <table>
+           <tr> 
+               <td> <h1 style="text-align: center;color: navy;">Espace & Rep&egrave;rage </h1> </td>
+               <td>   <a href="">  <img src="{% static 'college/cours.png' %}" height="150"> </a></td> 
+               <td>  <h2><a href="index"> RETOUR PAGE ACCUEIL</a></h2> </td> 
+            </tr> 
+        </table>
+        
+      
+     
+       <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Prisme droit </a></li>
+              <li><a href="#tabs-2">Cylindre de r&eacute;volution</a></li>
+              <li><a href="#tabs-3">Pyramide</a></li>
+              <li><a href="#tabs-4">C&ocirc;ne de r&eacute;volution</a></li>
+              <li><a href="#tabs-5">Sph&egrave;re </a></li>
+              <li><a href="#tabs-6">Rep&eacute;rage sur un axe</a></li>
+              <li><a href="#tabs-7">Rep&eacute;rage sur un plan</a></li>
+              <li><a href="#tabs-8">Rep&eacute;rage sur la terre</a></li>
+            </ul>
+            <div id="tabs-1">
+                    <h3>Espace - Prisme droit </h3>
+                    <iframe width="100%" height="350"></iframe>
+
+               
+
+            </div>
+            <div id="tabs-2">
+                    <h3>Espace - Cylindre de r&eacute;volution </h3>
+              
+            </div>
+            <div id="tabs-3">
+                    <h3>Espace - Pyramide </h3>
+            </div>
+            <div id="tabs-4">
+                    <h3>Espace - C&ocirc;ne de r&eacute;volution  </h3>
+            </div>
+            <div id="tabs-5">
+                    <h3>Espace - Sph&egrave;re </h3>
+            </div>
+            <div id="tabs-6">
+                    <h3>Rep&eacute;rer un point sur un axe gradu&eacute;</h3>
+            </div>
+            <div id="tabs-7">
+                    <h3>Rep&eacute;rer un point sur un plan</h3>
+            </div>
+            <div id="tabs-8">
+                    <h3>Rep&eacute;rer un point sur la terre</h3>
+                    <iframe src="repere_terre" width="100%" height="400"></iframe>
+                    
+            </div>
+          </div>
+                
+
+    </body>
+</html>
