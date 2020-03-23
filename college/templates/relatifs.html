@@ -9,13 +9,15 @@
                 border-width: 2px;
                 font-size: 25px;
             }
-
+            .blinking{
+            animation:blinkingText 1.2s infinite;
+            }
        </style>
     </head>
     <body>
        <h1 style="text-align: center;color: navy;">
-            <img src="{% static 'college/Hippocampus.png' %}" height="150">  
-        HYPPOCAMPUS COLL&Eacute;GE -<span style="color: red;">  Nombres relatifs </span> -- <a href="index"> RETOUR PAGE ACCUEIL</a> </h1>
+            <a href="index" title="Aller sur la page d'acceuil !">     <img src="{% static 'college/Hippocampus.png' %}" height="150">  </a>
+       --><span style="color: red;">  Nombres relatifs </span>  </h1>
        
       
 

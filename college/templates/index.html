@@ -2,6 +2,7 @@
     <head>{%  load static %}
         <meta charset="utf-8">
         <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <style type="text/css">
             td#header{
                 width: 50%;
@@ -12,10 +13,16 @@
             #fonctionsContainer,#algoContainer{
                 margin-bottom: 20px;    
             }
+            #toDo{
+                background-color: yellow;
+            }
+            .checked {
+                color: red;
+                }
        </style>
     </head>
     <body style="background-repeat:no-repeat; background-size:30%; background-position: center; background-image: url('{% static "college/Hippocampus.png"%}' ); ">
-       <h1 style="text-align: center;color: navy;">HYPPOCAMPUS COLL&Eacute;GE </h1>
+       <h1 style="text-align: center;color: navy;">HYPPOCAMPUS COLL&Egrave;GE </h1>
        <table style="width: 100%;">
             <tr >
                 <td id="header" >
@@ -23,13 +30,18 @@
                          
                     </h2>
                     <ol> 
-                        <li style="font-size: 20px;" >
+                        <li style="font-size: 20px;">
                             
                         
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les nombres !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                                 </a>
-                                <a href="decimaux" title="Aller voir les nombres décimaux ! ">  <img src="{% static 'college/Decimaux.png' %}" height="40"> D&eacute;cimaux </a> 
+                                <a  id="toDo" href="decimaux" title="Aller voir les nombres décimaux ! ">  <img src="{% static 'college/Decimaux.png' %}" height="40"> D&eacute;cimaux </a> 
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star  "></span>
                         </li>
                         <li> 
                            
@@ -39,6 +51,11 @@
                             <a href="entiers" title="Aller voir les nombres entiers ! ">  
                                     <img src="{% static 'college/Entiers.png' %}" height="40"> Entiers 
                                 </a> 
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star  "></span>
                         </li>
                         <li> 
                             
@@ -49,6 +66,11 @@
                             <a href="relatifs" title="Aller voir les nombres relatifs ! ">  
                                 <img src="{% static 'college/Relatifs.png' %}" height="40">  Relatifs 
                             </a>
+                            <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked "></span>
                         </li>
                         <li> 
                            
@@ -58,12 +80,24 @@
                             <a href="rationnels" title="Aller voir les nombres rationnels ! ">  
                                 <img src="{% static 'college/Rationnel.png' %}" height="40"> Rationnels
                             </a> 
+                            <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked "></span>
+
                         </li>
                         <li> 
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les puissances de nombres !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                                 </a>
                             <a href="puissances"> <img src="{% static 'college/puissances.png' %}" height="40">  Puisssances </a> 
+                            <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked "></span>
+                                
                         </li>
                     </ol>
                 </td>
@@ -71,29 +105,29 @@
                     <h2 style="text-align: right;">Algorithmique & Programmation </h2>
 
                     <ol>
-                        <li id="algoContainer"><a href="algorithmes_variables" title=""> Algorithmes & Variables d&prime;un algorithme</a>
+                        <li id="algoContainer"><a  id="toDo" href="algorithmes_variables" title=""> Algorithmes & Variables d&prime;un algorithme</a>
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les algorithmes !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                                 </a>
                         </li>
-                        <li id="algoContainer"><a href="tests_si_sinon" title=""> Tests <span style="color: red;">Si</span>...<span style="color: red;">Sinon</span>...  </a>
+                        <li id="algoContainer"><a  id="toDo" href="tests_si_sinon" title=""> Tests <span style="color: red;">Si</span>...<span style="color: red;">Sinon</span>...  </a>
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les tests si...sinon... !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                                 </a>
                             </li>
-                        <li id="algoContainer"><a href="boucles_for_while" title=""> Boucles Pour <b> FOR </b> Boucles Tant que <b> While</b> </a>
+                        <li id="algoContainer"><a  id="toDo" href="boucles_for_while" title=""> Boucles Pour <b> FOR </b> ou Tant que <b> While</b> </a>
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les boucles !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                                 </a>
                             
                         </li>
-                        <li id="algoContainer"><a href="liste_tableaux" title=""> Listes et Tableaux</a>
+                        <li id="algoContainer"><a  id="toDo" href="liste_tableaux" title=""> Listes et Tableaux</a>
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les listes et tableaux !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                                 </a>
                                 
                             </li>
-                            <li id="algoContainer"> <a href="fonctions_procedures" title=""> Fonctions et Proc&eacute;dures </a> 
+                            <li id="algoContainer"> <a  id="toDo" href="fonctions_procedures" title=""> Fonctions et Proc&eacute;dures </a> 
                                 <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les proc&egrave;dures !!">  
                                         <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                                     </a>
@@ -107,7 +141,7 @@
             </tr>
             <tr >
                 
-                <td id="header" > 
+                <td id="header"  > 
                     <h2>Fonctions 
                     </h2>
                     <ol id="fonctionsContainer">
@@ -115,67 +149,139 @@
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les grandeurs et mesures !!">  
                                 <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
-                            <a href="grandeurs_mesures"> Grandeurs et mesures </a> 
+                            <a  id="toDo" title="Aller voir les Grandeurs et mesures ! " href="grandeurs_mesures"> Grandeurs et mesures </a> 
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+
                         </li>
                         <li id="fonctionsContainer">
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur la proportionnalit&eacute; !!">  
                                 <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
-                            <a href="proportionnalite"> Proportionnalit&eacute;</a> 
+                            <a href="proportionnalite" title="Aller voir la Proportionnalit&eacute; ! " > Proportionnalit&eacute;</a> 
+                            <span style="vertical-align: right: ;;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </span>
                         </li>
                         <li id="fonctionsContainer">
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les statistiques et les probabilit&eacute;s !!">  
                                 <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
-                            <a href="statistique_probabilite"> Statistiques et Probabilit&eacute; </a>
+                            <a href="statistique_probabilite" title="Aller voir la Statistique et Probabilit&eacute; ! "> Statistiques et Probabilit&eacute; </a>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
                         </li>
                         <li id="fonctionsContainer"> 
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur le r&ocirc;le de la lettre et du signe &eacute;gal !!">  
                                 <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
-                            <a href="fonctions_role_lettre_egal" title=""> Fonctions, R&ocirc;le de la lettre et du signe &eacute;gal</a>
+                            <a href="fonctions_role_lettre_egal" title="Aller voir les Fonctions, R&ocirc;le de la lettre et du signe &eacute;gal ! "> 
+                                Fonctions, R&ocirc;le de la lettre et du signe &eacute;gal</a>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+
                         </li>
                         <li id="fonctionsContainer">
                             <a  href="evaluations?theme=Fonctions&sujet=Calcul littéral" target="_blank" title="&Eacute;valuation sur le r&ocirc;le de la lettre et du signe &eacute;gal !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
-                            <a href="calcul_litteral_in_equations" title=""> Calcul litt&eacute;ral & (In)&Eacute;quations </a>
+                            <a href="calcul_litteral_in_equations"  title="Aller voir le Calcul litt&eacute;ral & (In)&Eacute;quations! "> 
+                                Calcul litt&eacute;ral & (In)&Eacute;quations </a>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+
                         </li>
                        
                         
                     </ol>
                 </td>
 
-                <td id="header" style="text-align: right;;"> <h2>G&eacute;om&eacute;trie 
+                <td id="header" style="text-align: right;"> <h2>G&eacute;om&eacute;trie 
                     
                 </h2> 
                 
                     <ol>
 
-                        <li id="fonctionsContainer"><a href="angles_triangles">  Angles & Triangles </a>
+                        <li id="fonctionsContainer">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star  "></span>
+
+                            <a  id="toDo" href="angles_triangles" title="Aller voir les  Angles & Triangles  ! ">  Angles & Triangles </a>
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les angles et triangles !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
                         </li>
-                        <li id="fonctionsContainer"><a href="espace_reperage"> Espace & Rep&egrave;rage </a> 
+                        <li id="fonctionsContainer">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            <a  id="toDo" href="espace_reperage" title="Aller voir l&prime;Espace & Rep&egrave;rage  ! "> Espace & Rep&egrave;rage </a> 
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur l&prime;espace et le rep&eacute;rage !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
                         </li>
-                        <li id="fonctionsContainer"><a href="transformation_parallelogramme"> Transformations & parall&eacute;logramme </a> 
+                        <li id="fonctionsContainer">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star "></span>
+
+                            <a  id="toDo" href="transformation_parallelogramme" title="Aller voir les Transformations & parall&eacute;logramme  ! "> Transformations & parall&eacute;logramme </a> 
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les trnasformations et parall&eacute;logramme !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
                         </li>
-                        <li id="fonctionsContainer"><a href="triangles_rectangles"> Triangles rectangles </a>
+                        <li id="fonctionsContainer">
+
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked "></span>
+
+                            <a href="triangles_rectangles" title="Aller voir les Triangles rectangles   ! "> Triangles rectangles </a>
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les triangles rectangles !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
                         </li>
-                        <li id="fonctionsContainer"><a href="triangles_proportionnalite">Triangles et proportionnalit&eacute;</a> 
+                        <li id="fonctionsContainer">
+
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked "></span>
+
+                            <a href="triangles_proportionnalite" title="Aller voir les Triangles et proportionnalit&eacute;  ! ">Triangles et proportionnalit&eacute;</a> 
                             <a  href="evaluations" target="_blank" title="&Eacute;valuation sur les triangles et proportionnalit&eacute; !!">  
                                     <img style="vertical-align: bottom;" src="{% static 'college/evaluation.png' %}" height="30">
                             </a>
+
+                            
+
                         </li>
                     </ol>
                 </td>

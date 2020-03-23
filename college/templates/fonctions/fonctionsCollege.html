@@ -2,6 +2,19 @@
     <head>{%  load static %}
         <meta charset="utf-8">
         <title>HYPPOCAMPUS COLL&Eacute;GE </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                collapsible: true,
+                heightStyle: "content"
+            });
+            
+        } );
+        </script>
+
        <style type="text/css">
             td#header{
                 width: 50%;
@@ -11,10 +24,47 @@
             }
 
        </style>
-       
+
+        <style>
+        .blinking{
+        animation:blinkingText 1.2s infinite;
+        }
+        @keyframes blinkingText{
+            0%{     color: #000;    }
+            49%{    color: #000; }
+            60%{    color: transparent; }
+            99%{    color:transparent;  }
+            100%{   color: #000;    }
+        }
+    
+    
+          </style>
     </head>
-    <body>
-            <img src="{% static 'college/fonctions/proportionnalite/Pourcentage0.png' %}" height="400">
-            <img src="{% static 'college/fonctions/proportionnalite/Pourcentage1.png' %}" height="400">
+    <body><h2 class="blinking" style="text-align: center;">Fonctions       
+            </h2>
+        <div id="accordion" style="height: 100%;">
+            <h3>Mod&eacute;liser une situation !! </h3>
+            <div>
+                
+                <img src="{% static 'college/fonctions/modelisation1.png' %}" height="400">
+                <img src="{% static 'college/fonctions/modelisation0.png' %}" height="400">
+                <img src="{% static 'college/fonctions/modelisation.png' %}" height="400">
+                
+    
+            </div>
+            <h3>Tableau de valeurs</h3>
+            <div>
+                    <img src="{% static 'college/fonctions/tableau-valeurs.png' %}" height="400">
+                    
+            </div>
+            <h3>Repr&eacute;sentation graphique</h3>
+            <div>
+                    <img src="{% static 'college/fonctions/graphique.png' %}" height="400">
+                    <img src="{% static 'college/fonctions/graphique1.png' %}" height="400">
+                    <img src="{% static 'college/fonctions/graphique2.png' %}" height="400">
+                    <img src="{% static 'college/fonctions/graphique3.png' %}" height="400">
+                    <img src="{% static 'college/fonctions/graphique4.png' %}" height="400">
+            </div>
+            
     </body>
 </html>

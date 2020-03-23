@@ -9,13 +9,15 @@
                 border-width: 2px;
                 font-size: 25px;
             }
-
+            .blinking{
+            animation:blinkingText 1.2s infinite;
+            }
        </style>
     </head>
     <body>
        <h1 style="text-align: center;color: navy;">
-            <img src="{% static 'college/Hippocampus.png' %}" height="150"> 
-        HYPPOCAMPUS COLL&Eacute;GE - <span style="color: red;"> Puissances de nombres </span> -- <a href="index"> RETOUR PAGE ACCUEIL</a> </h1>
+            <a href="index" title="Aller sur la page d'acceuil !">      <img src="{% static 'college/Hippocampus.png' %}" height="150"> </a>
+       --> <span style="color: red;"> Puissances de nombres </span> </h1>
       
        <table style="width: 100%;">
             <tr>
@@ -25,7 +27,7 @@
                     </a>
                 </td>
                 <td style="width: 80%;">
-                    <table style="width: 100%;">
+                    <table style="width: 100%;display: none;">
                         <tr>
                             <td>
                               <h3>   Puissances positives ou Puissances n&eacute;gatives</h3>

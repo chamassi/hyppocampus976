@@ -14,9 +14,9 @@
     </head>
     <body>
 
-       <h1 style="text-align: center;color: navy;">HYPPOCAMPUS COLL&Eacute;GE - - Listes et Tableaux </h1>
-       <h2><a href="index"> RETOUR PAGE ACCUEIL</a></h2>
-       
+         <h1 style="text-align: center;">  <a href="index" title="Aller sur la page d'acceuil !">      <img src="{% static 'college/Hippocampus.png' %}" height="150"> </a>
+        --> <span style="color: red;"> Correction des exercices (En cours d&prime;int&eacute;gration) </span></h1>
+    </h1> 
        <h2>THEME : {{theme}} - Sujet : {{sujet}} </h2>
               
 <form>
@@ -54,8 +54,8 @@
              <tr>    
                <td> {{ exoNum }} </td> 
                <td> {% for reponseNum, reponseValue in exoReponse.items %} 
-                    {{reponseNum}}  
-                    <input value="{{reponseValue}}">
+                    {{reponseNum}}  = 
+                     <label>{{reponseValue}}</label>
 
                      {% endfor %}
 

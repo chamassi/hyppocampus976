@@ -138,7 +138,37 @@ urlpatterns = [
      path('displayTerreGeographie', views.displayTerreGeographie, name='displayTerreGeographie'),
     path('transformation_parallelogramme', views.transformation_parallelogramme, name='transformation_parallelogramme'),
     path('triangles_rectangles', views.triangles_rectangles, name='triangles_rectangles'),
+    #trigonometrie
+    path('trigonometrie', views.trigonometrie, name='trigonometrie'),
+    #trigonometrie_angle
+    path('trigonometrie_angle', views.trigonometrie_angle, name='trigonometrie_angle'),
+    #trigonometrie_longueur
+    path('trigonometrie_longueur', views.trigonometrie_longueur, name='trigonometrie_longueur'),
+    #pythagore
+    path('pythagore', views.pythagore, name='pythagore'),
+
+    #racine_carre
+    path('racine_carre', views.racine_carre, name='racine_carre'),
+
+    #reciproque_pythagore
+    path('reciproque_pythagore', views.reciproque_pythagore, name='reciproque_pythagore'),
+
+
+
     path('triangles_proportionnalite', views.triangles_proportionnalite, name='triangles_proportionnalite'), 
+    #thales
+    path('thales', views.thales, name='thales'), 
+    #reciproque_thales
+    path('reciproque_thales', views.reciproque_thales, name='reciproque_thales'), 
+    #thales_longueur
+    path('thales_longueur', views.thales_longueur, name='thales_longueur'), 
+    #agrandissement_reduction
+    path('agrandissement_reduction', views.agrandissement_reduction, name='agrandissement_reduction'), 
+    #homothetie
+    path('homothetie', views.homothetie, name='homothetie'), 
+    #triangles_semblables
+    path('triangles_semblables', views.triangles_semblables, name='triangles_semblables'), 
+
     ###########################################################################
     ########## TRAITEMENTS SUR LES ALGORITHMES ET LA PROGRAMMATION   ##########
     path('algorithmes_variables', views.algorithmes_variables, name='algorithmes_variables'),
